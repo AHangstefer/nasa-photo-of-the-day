@@ -3,10 +3,10 @@ import "./App.css";
 import InfoList from "./components/InfoList.js";
 
 
-function App() {
+function App (){
   return (
     <div className="App">
-      <h1 className = 'Title'>Title</h1>
+  
       <InfoList />
       
       

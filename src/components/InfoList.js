@@ -5,7 +5,7 @@ import InfoCard from "./InfoCard.js";
 
 
 export default function InfoList(){
-    const [items, setInfo] = useState([]);
+    const [item, setInfo] = useState([]);
 
   useEffect(()=> {
       axios
@@ -19,21 +19,21 @@ export default function InfoList(){
       });
   }, []);
 
-  return(
-   <div className = "everything">  
-    {items.map(item => {
+
           return(
+            <div className = "everything">
               <InfoCard 
                 key = {item.hdurl}
-                //image = {item.hdurl}
+                image = {item.url}
                 title = {item.title} 
                 date = {item.date}
                 explanation = {item.explanation}
             />
+            </div>
           );
-      })}  
+        
      
-  </div> 
-);
-}
+
+          };
+
 

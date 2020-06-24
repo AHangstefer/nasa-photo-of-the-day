@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import InfoList from "./components/InfoList";
+import InfoList from "./components/InfoList.js";
 
 
 function App() {

@@ -5,7 +5,7 @@ const InfoCard = ({image, title, date, explanation }) => {
     return (
         <div className = 'dataPresentation'>
             <h1>{title}</h1>
-            <img src = {image} />
+            <img src = {image} alt = "bright clouds and a tiny upside down silouette of a big city" />
             <h2>Photo Title: {title}</h2>
             <p>Date Taken: {date}</p>
             <p>About: {explanation}</p>
